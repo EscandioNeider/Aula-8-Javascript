@@ -1,4 +1,4 @@
-# 📒 Aula 8 -> Curso de Desenvolvimento em JS (Variáveis 2/2)
+# 📒 Aula 8 -> Curso de Desenvolvimento em JS 
 
 Este projeto foi desenvolvido como parte da oitava aula de JavaScript, com o objetivo de ensinar sobre If e Else
 
