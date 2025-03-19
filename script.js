@@ -1,13 +1,27 @@
-function logar(){
-    var usuario = document.getElementById('idUsuario').value
-    var senha = document.getElementById('idSenha').value
+        function logar(){
+            var usuario = document.getElementById('idUsuario').value;
+            var senha = document.getElementById('idSenha').value;
     
-    if(usuario == "admin" && senha == "1234" ){
-        window.location = "page.html"
-    }else{
-        alert("Usuário ou senha incorretos. Tente novamente!")
-    }
-}
+            if(usuario == "admin" && senha == "1234" ){
+                window.location = "page.html";
+            }else{
+                alert("Usuário ou senha incorretos. Tente novamente!");
+            }
+        }
+
+        // Função para capturar o pressionamento da tecla "Enter"
+        function pressionarEnter(event) {
+            if (event.key === "Enter") {
+                logar();
+            }
+        }
+
+        // Adicionando o evento de "Enter" aos campos
+        window.onload = function() {
+            document.getElementById('idUsuario').addEventListener('keydown', pressionarEnter);
+            document.getElementById('idSenha').addEventListener('keydown', pressionarEnter);
+        }
+
 
 function calcular() {
     var nota1 = document.getElementById('nota1').value;
